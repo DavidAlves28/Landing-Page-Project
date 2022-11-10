@@ -1,48 +1,59 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
+/* fundo da pagina com degrade */
+body {
+    
+    background-image: linear-gradient(-45deg, #ffff, rgba(194, 57, 73, 255));
+    background-repeat: no-repeat;
+}
 
 /* stryle para header e flex para separar itens  */
-.header {
-   
+.header{
+    max-width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(194,57,73,255);
-}   
+    color: #ffff;
+    font-size: xx-large;
+    height: 20vh;
+}
+
 
 /* style para texto dentro do header */
-.header p ,h1 ,h2{
+.header p,
+h1,
+h2 {
     text-align: center;
     font-size: xx-large;
-   color: #fff;
-    margin: 0 20px 0 20px;
+    color: #fff;
+    gap: 0px;
 }
 
 /* tamanho da imagem que esta dentro do header */
 .header img {
-    height: 20vh;
+    height: 15vh;
 }
 
 /* Estilização do menu  */
-.nav-principal { 
+.nav-principal {
     position: sticky;
     top: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(0deg, #9e2a2b, #b23a48, #ed3147);
-    width: 99vw;
-    border: 1px solid #222;
+    min-width: 99vw;
+    /* border: 1px solid #222; */
     float: left;
     height: 35px;
     font-size: larger;
-    
+
 }
 
 /*  style para itens lista. */
@@ -51,8 +62,9 @@
     float: left;
     list-style: none;
     background-image: linear-gradient(0deg, #9e2a2b, #b23a48, #ed3147);
-    
+
 }
+
 
 /* style para itens a dentro li do menu */
 .nav-principal li a {
@@ -60,26 +72,51 @@
     text-decoration: none;
     padding: 5px 10px;
     display: block;
-    border-radius: 10px;
-    /* width: 200px; */
+    width: 200px;
+   }
+
+/* esse style faz com que o menu tenha uma animação abaixo como uma barra que aumenta quando o mouse passa por cima  line 70/87*/
+.nav-principal li a:before {
+    /* before: oque como é como item deve estar antes que passo o mouse mais com todas as propriedades ja atribuidas,  a visibility: hidden cuida que isso aconteca */
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
 }
+
+.nav-principal li a:hover:before {
+    /*  Nessa parte quando o mouse passa por cima , usando o hover os parametros sao mudados visible, scaleX() */
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
 
 /*  hover para itens a dentro da li do menu */
 .nav-principal li a:hover {
-    background: #333;
+
     color: #fff;
     text-shadow: 0px 0px 5px #fff;
- }
+}
 
 /* direciona todos os itens ul do menu */
 .nav-principal li ul {
     position: absolute;
-    top: 30px;
+    top: 32px;
     left: 0;
     background-color: #fff;
     display: none;
-    
+
 }
+
 /* estrutura para esconder o sub-menu  */
 .nav-principal li:hover ul,
 .nav-principal li.over ul {
@@ -93,21 +130,138 @@
 }
 
 /* estrutura da Main  */
-.containerMain{
-    height: 60vh;
-    width: 98vw;
+.containerMain {
+    height: 1200px;
+    width: 99vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+/* style para primeira secao da main "Inovação" */
+.secaoInovacao {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 250px;
+    background-image: url(img/bicycle.png);
+    background-repeat: no-repeat round;
+    margin: 20px 0 30px 30px;
+    background-color: rgba(194, 57, 73, 255);
+    border-radius: 20px;
+
+}
+
+.inovacao {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 200px;
+    width: 90vw;
+}
+
+.lineV {
+
+    border-left: 6px solid black;
+    height: 100%;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-left: 25%;
+
+}
+.lineMenu {
+
+    border-left: 6px solid black;
+    height: 100%;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    
+
+}
+.inovacao h1 {
+    color: aliceblue;
+}
+
+/*secao CARD Tipos */
+.cards {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 95vw;
+    margin-left: 20px;
+}
+
+.motobike {
+    background-image: url(img/motorbike.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: left;
+    width: 90%;
+    height: 45%;
+    margin: 3%;
+    background-color: rgba(194, 57, 73, 255);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+}
+
+.motobike h1,
+p {
+    min-width: 20%;
+    grid-column: 2;
+    margin-top: 10px;
+}
+
+/* cardCaminhoes */
+.cardCaminhoes {
+    background-image: url(img/caminhao-de-entrega.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 90%;
+    height: 45%;
+    margin: 3%;
+    background-color: rgba(194, 57, 73, 255);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cardCaminhoes h1,
+p {
+    min-width: 30%;
+    grid-column: 2;
+    margin: 2px;
+}
+
+.cardCaminhoesP {
+    background-image: url(img/caminhao-grande.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 90%;
+    height: 45%;
+    margin: 3%;
+    background-color: rgba(194, 57, 73, 255);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cardCaminhoesP h1,
+p {
+    min-width: 30%;
+    grid-column: 2;
+    margin: 2px;
 }
 
 /* Estrutura para footer com grid */
 footer {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: 100%;
-    background-image: linear-gradient(90deg,rgba(194,57,73,255), #fcfafa, rgba(194,57,73,255), #fcfafa);
+    background-image: linear-gradient(90deg, rgba(194, 57, 73, 255), #fcfafa, rgba(194, 57, 73, 255), #fcfafa);
     position: relative;
     bottom: 0px;
     border: 1px solid black;

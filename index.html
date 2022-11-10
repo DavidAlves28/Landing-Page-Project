@@ -15,18 +15,19 @@
         <h1>Log4</h1>
         <h2> ENTREGAR SEM PARAR ▫️▫️▫️</h2>
         <img src="img/bicycle.png" alt="bicycle">
-        <p>▫️▫️▫️</p>
+     
         <img src="img/motorbike.png" alt="motorbike">
-        <p>▫️▫️▫️</p>
-        <img src="img/caminhao-de-entrega.png" alt="caminhao-de-entrega">
-        <p>▫️▫▫️</p>
-        <img src="img/caminhao-grande.png" alt="caminhao-de-entrega">
-        <p>▫️▫️▫️</p>
+        
+        <img  src="img/caminhao-de-entrega.png" alt="caminhao-de-entrega">
+        
+        <img  src="img/caminhao-grande.png" alt="caminhao-de-entrega">
+        
     </header>
     <!--  Estrutura de Menu e sub-menu -->
     <nav class="nav-principal">
         <li><a href="#"> Home</a></li>
-
+        
+        <div class="lineMenu"></div>
         <li><a href="#">Serviços de Entrega</a>
             <!-- //sub-menu -->
             <ul class="nav-servico">
@@ -35,16 +36,17 @@
                 <li><a href="#">Caminhões Pesados</a></li>
             </ul>
         </li>
+        <!-- Div para criar uma divisao entre os itens do menu -->
+        <div class="lineMenu"></div>
 
-        <li><a href="#">Cultura</a>
+        <li><a href="#">Rastreamento</a>
             <!-- //sub-menu -->
             <ul class="nav-cultura">
-                <li><a href="#">Oque acreditamos</a> </li>
-                <li><a href="#">Nossos valores</a></li>
-                <li><a href="#">Diversidade</a></li>
+                <li><a href="#">Encomendas </a> </li>
+                <li><a href="#">Caminhões</a></li>
             </ul>
         </li>
-
+        <div class="lineMenu"></div>
         <li><a href="#">Contato</a>
             <!-- //sub-menu -->
             <ul class="nav-contato">
@@ -52,9 +54,9 @@
                 <li><a href="#">Financeiro</a></li>
             </ul>
         </li>
-
+        <div class="lineMenu"></div>
         <li><a href="#">Sobre</a></li>
-
+        <div class="lineMenu"></div>
         <li><a href="#">Trabalhe conosco</a>
             <!-- sub-menu -->
             <ul class="nav-trabalhe">
@@ -65,29 +67,83 @@
         </li>
     </nav>
     <main class="containerMain">
-        <section class="secaoApresentacao">A</section>
-        <section class="secaoRastreamento">A</section>
-        <section class="secaoPedidos">A</section>
+        <section class="secaoInovacao">
+            <!-- <img src="img/bicycle.png" alt="bicycle"> -->
+            <div class="lineV"></div>
+            <aside class="inovacao">
+                <h1>
+                    Ja conhece nossas Bikes ?
+                </h1>
+                <h3>
+                    Pensando na Agilidade, rapidez e sempre na qualidade de nossos serviços, implementamos as Bikes.
+                    <br>
+                </h3>
+
+            </aside>
+
+            <aside class="inovacao">
+                <a hred="#">Entre em contato para Disponibilidade</a>
+                <br>
+                <br>
+                <br>
+                <p>
+                    Esse serviço está disponível para cidade de São Paulo, devido ao trânsito e curtos caminhos.
+                    Com segurança, equipamentos e pessoas treinadas para entregar sem parar.
+                </p>
+            </aside>
+        </section>
+        <section class="cards">
+            <aside class="motobike">
+
+                <h1>Motobike</h1>
+                <p>
+                    Jeito fácil para quem deseja receber encomendas de pequeno porte com rapidez. Temos parceiros em
+                    varías cidades confira a disponibilidade <a href="#">Clique Aqui</a>
+                </p>
+            </aside>
+            <aside class="cardCaminhoes">
+
+                <h1>Caminhões leves</h1>
+                <p>
+                    Jeito fácil para quem deseja receber encomendas de pequeno porte com rapidez. Temos parceiros em
+                    varías cidades confira a disponibilidade <a href="#">Clique Aqui</a>
+                </p>
+            </aside>
+            <aside class="cardCaminhoesP">
+
+                <h1>Caminhões Pesados</h1>
+                <p>Contando com frota nova nosso Caminhões estão disponíveis em varios Estados, fazendo conexões com filiais e parceiros, veja os locais
+                     <a href="#">Clicando Aqui</a>
+                </p>
+            </aside>
+            
+        </section>
+
+        <section class="secaoRastreamento">
+
+        </section>
         <section class="secaoFrota">A</section>
         <p> Main</p>
     </main>
     <footer>
-        <section> <h3>Cultura:</h3>
-        <ul>
-            <li>Disponibilidade</li>
-            <li>Agilidade</li>
-            <li>Fazer bem feito</li>
-        </ul>
-        
+        <section>
+            <h3>Cultura:</h3>
+            <ul>
+                <li>Disponibilidade</li>
+                <li>Agilidade</li>
+                <li>Fazer bem feito</li>
+            </ul>
+
         </section>
 
-        <section><h3>Contato</h3>
+        <section>
+            <h3>Contato</h3>
             <ul>
                 <li>Atendimento Cliente : <br>
                     (xx)xxxx-xxxx</li>
                 <li>Financeiro:<br>
-                (xx)xxxx-xxxx</li>
-            </ul>        
+                    (xx)xxxx-xxxx</li>
+            </ul>
         </section>
 
         <section>
@@ -99,7 +155,7 @@
             </ul>
         </section>
 
-        <section> 
+        <section>
             <h3>Trabalhe conosco</h3>
             <ul>
                 <li>Vagas </li>
