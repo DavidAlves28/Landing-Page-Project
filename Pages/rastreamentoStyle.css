@@ -8,7 +8,7 @@
 /* fundo da pagina com degrade */
 body {
     height: 1000px;
-    background-image: linear-gradient(-45deg, #ffff, rgba(194, 57, 73, 255));
+    background-image: linear-gradient(-90deg, rgb(193, 181, 181), rgba(194, 57, 73, 255));
     background-repeat: no-repeat;
 }
 
@@ -39,36 +39,7 @@ h2 {
 .header img {
     height: 15vh;
 }
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.cadastro {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 20%;
-}
-input{
-    margin: 10px;
-    width: 100%;
-}
-button {
-    width: 30vw;
-    height: 5vh;
-    border-radius: 10px;
-}
-
-button:hover {
-    background-image: linear-gradient(90deg, rgba(194, 57, 73, 255), #ffff);
-
-    cursor: pointer;
-}
-
+/* Style HOME para voltar a pagina principal */
 a {
     display: block;
     text-align: center;
@@ -81,4 +52,30 @@ a {
 a:hover{
     background-image: linear-gradient(45deg, rgba(194, 57, 73, 255), #ffff);
   
+}
+
+
+.containerMain{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.cardRastreio{
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh;
+    width: 90vw;
+    font-size: x-large;
+    
+}
+.cardRastreio img {
+    height: 35vh;
+    
+}
+.mapa{
+  
+ margin: 0 auto;
+ border: 1px solid black;
 }

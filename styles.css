@@ -9,7 +9,6 @@
 body {
 
     background-image: linear-gradient(-45deg, #ffff, rgba(194, 57, 73, 255));
-    background-repeat: no-repeat;
 }
 
 /* stryle para header e flex para separar itens  */
@@ -87,7 +86,7 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(0deg, #9e2a2b, #b23a48, #ed3147);
-    width: 99vw;
+    width: 98vw;
     border: 1px solid #222;
     float: left;
     height: 35px;
@@ -111,7 +110,7 @@ button:hover {
     text-decoration: none;
     padding: 5px 10px;
     display: block;
-    width: 100%;
+    width: 90%;
 }
 
 /* esse style faz com que o menu tenha uma animação abaixo como uma barra que aumenta quando o mouse passa por cima  line 70/87*/
@@ -371,15 +370,27 @@ p {
     color: #ffff;
 }
 
-.cardRastreamento
+
 
 /* Estrutura para footer com grid */
-footer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 100%;
-    background-image: linear-gradient(90deg, rgba(194, 57, 73, 255), #fcfafa, rgba(194, 57, 73, 255), #fcfafa);
-    position: relative;
-    bottom: 0px;
+.rodaPe {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #ed3147;
+    height: 20vh;
     border: 1px solid black;
+}
+.linkedin{
+    height: 5vh;
+}
+.github{
+    height: 5vh;
+}
+.rodaPe li {
+    list-style: none;
+}
+.rodaPe a{
+    text-decoration: none;
+    color: #000;
 }

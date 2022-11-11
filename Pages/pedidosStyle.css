@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/* fundo da pagina com degrade */
+body {
+    height: 1000px;
+    background-image: linear-gradient(-90deg, rgb(198, 180, 180), rgba(194, 57, 73, 255));
+    background-repeat: no-repeat;
+}
+
+/* stryle para header e flex para separar itens  */
+.header {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffff;
+    font-size: xx-large;
+    height: 20vh;
+}
+
+
+/* style para texto dentro do header */
+.header p,
+h1,
+h2 {
+    text-align: center;
+    font-size: xx-large;
+    color: #fff;
+    gap: 0px;
+}
+
+/* tamanho da imagem que esta dentro do header */
+.header img {
+    height: 15vh;
+}
+/* Style HOME para voltar a pagina principal */
+a {
+    display: block;
+    text-align: center;
+    height: 20px;
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #222;
+    font-size: x-large;
+}
+a:hover{
+    background-image: linear-gradient(45deg, rgba(194, 57, 73, 255), #ffff);
+  
+}
+.containerMain {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cardPrincipal img{
+ height: 24vh;
+ width: 15vw;
+}
+.cardPrincipal{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    height: 24vh;
+    width: 95vw;
+    justify-content: center;
+    align-items: center;
+}
+#seletor {
+    height: 6vh;
+    grid-column: 3;
+    border-radius: 10px;
+
+}
+button {
+    width: 10vw;
+    height: 5vh;
+    border-radius: 10px;
+}
+button:hover {
+    background-image: linear-gradient(90deg, rgba(194, 57, 73, 255), #ffff);
+    cursor: pointer;
+}
+
+.cardMoto img{
+    height: 24vh;
+    width: 15vw;
+   }
+   .cardMoto{
+       display: grid;
+       grid-template-columns: 1fr 2fr 2fr;
+       height: 24vh;
+       width: 95vw;
+       justify-content: center;
+       align-items: center;
+   }
+   #seletor {
+       height: 6vh;
+       grid-column: 3;
+       border-radius: 10px;
+   
+   }
+   .cardCaminhoes img{
+    height: 24vh;
+    width: 15vw;
+   }
+   .cardCaminhoes{
+       display: grid;
+       grid-template-columns: 1fr 2fr 2fr;
+       height: 24vh;
+       width: 95vw;
+       justify-content: center;
+       align-items: center;
+   }
+   #seletor {
+       height: 6vh;
+       grid-column: 3;
+       border-radius: 10px;
+   
+   }
+   .cardCaminhoesP img{
+    height: 30vh;
+    width: 15vw;
+   }
+   .cardCaminhoesP{
+       display: grid;
+       grid-template-columns: 1fr 2fr 2fr;
+       height: 24vh;
+       width: 95vw;
+       justify-content: center;
+       align-items: center;
+   }
+   #seletor {
+       height: 6vh;
+       grid-column: 3;
+       border-radius: 10px;
+   
+   }
+   

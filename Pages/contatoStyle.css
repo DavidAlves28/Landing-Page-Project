@@ -8,7 +8,7 @@
 /* fundo da pagina com degrade */
 body {
     height: 1000px;
-    background-image: linear-gradient(-45deg, #ffff, rgba(194, 57, 73, 255));
+    background-image: linear-gradient(-90deg, rgb(193, 181, 181), rgba(194, 57, 73, 255));
     background-repeat: no-repeat;
 }
 
@@ -39,37 +39,8 @@ h2 {
 .header img {
     height: 15vh;
 }
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.cadastro {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 20%;
-}
-input{
-    margin: 10px;
-    width: 100%;
-}
-button {
-    width: 30vw;
-    height: 5vh;
-    border-radius: 10px;
-}
-
-button:hover {
-    background-image: linear-gradient(90deg, rgba(194, 57, 73, 255), #ffff);
-
-    cursor: pointer;
-}
-
-a {
+/* Style HOME para voltar a pagina principal */
+.home {
     display: block;
     text-align: center;
     height: 20px;
@@ -79,6 +50,37 @@ a {
     font-size: x-large;
 }
 a:hover{
-    background-image: linear-gradient(45deg, rgba(194, 57, 73, 255), #ffff);
+    background-color: rgba(194, 57, 73, 255);
   
+}
+.containerMain{
+    margin-top:20px ;
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chat{
+    height: 60vh;
+    width: 25vw;
+    border: 1px solid black;
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 30px;
+}
+.LinkChat{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+.chat h2 {
+    background-color: rgb(188, 9, 9);
+}
+.contato{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
 }
