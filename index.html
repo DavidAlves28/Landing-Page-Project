@@ -25,39 +25,40 @@
     </header>
     <!--  Estrutura de Menu e sub-menu -->
     <nav class="nav-principal">
-        <li><a href="#"> Home</a></li>
+        <li><a href="./index.html"> Home</a></li>
         
         <div class="lineMenu"></div>
-        <li><a href="#">Serviços de Entrega</a>
+        <li><a href="./Pages/pedidos.html">Serviços </a>
             <!-- //sub-menu -->
             <ul class="nav-servico">
-                <li><a href="#">Motoboys e ciclistas</a> </li>
-                <li><a href="#">Caminhões Pequenos</a></li>
-                <li><a href="#">Caminhões Pesados</a></li>
+                <li><a href="./Pages/pedidos.html">Motoboys e ciclistas</a> </li>
+                <li><a href="./Pages/pedidos.html">Caminhões Pequenos</a></li>
+                <li><a href="./Pages/pedidos.html">Caminhões Pesados</a></li>
             </ul>
         </li>
         <!-- Div para criar uma divisao entre os itens do menu -->
         <div class="lineMenu"></div>
 
-        <li><a href="#">Rastreamento</a>
+        <li><a href="./Pages/rastreamento.html">Rastreamento</a>
             <!-- //sub-menu -->
             <ul class="nav-cultura">
-                <li><a href="#">Encomendas </a> </li>
-                <li><a href="#">Caminhões</a></li>
+                <li><a href="./Pages/rastreamento.html">Encomendas </a> </li>
+                <li><a href="./Pages/rastreamento.html">Caminhões</a></li>
             </ul>
         </li>
         <div class="lineMenu"></div>
-        <li><a href="#">Contato</a>
+        <li><a href="./Pages/contato.html">Contato</a>
             <!-- //sub-menu -->
             <ul class="nav-contato">
-                <li><a href="#">Atendimento Cliente</a> </li>
-                <li><a href="#">Financeiro</a></li>
+                <li><a href="./Pages/contato.html">Chat</a></li>
+                <li><a href="./Pages/contato.html">Atendimento Cliente</a> </li>
+                <li><a href="./Pages/contato.html">Financeiro</a></li>
             </ul>
         </li>
         <div class="lineMenu"></div>
         <li><a href="#">Sobre</a></li>
         <div class="lineMenu"></div>
-        <li><a href="#">Trabalhe conosco</a>
+        <li><a href="#">Oportunidades</a>
             <!-- sub-menu -->
             <ul class="nav-trabalhe">
                 <li><a href="#">Vagas</a> </li>
@@ -67,29 +68,35 @@
         </li>
     </nav>
     <main class="containerMain">
+        <section  class="login">
+            <label for="nome">
+                
+                <input type="text" placeholder="Usuário" id="nome">
+            </label>
+            <label for="senha">
+                <input type="password" placeholder="Senha" id="senha">
+            </label>
+            <button  href="#"> Entrar</button>
+            <a href="./Pages/cadastro.html">FAÇA SEU CADASTRO</a>
+        </section>
         <section class="secaoInovacao">
-            <!-- <img src="img/bicycle.png" alt="bicycle"> -->
-            <div class="lineV"></div>
-            <aside class="inovacao">
+            
+            <img src="img/bicycle.png" alt="bicycle">
+            <aside class="cardPrincipal">
                 <h1>
-                    Ja conhece nossas Bikes ?
+                    Já conhece nossas Bikes ?
                 </h1>
                 <h3>
                     Pensando na Agilidade, rapidez e sempre na qualidade de nossos serviços, implementamos as Bikes.
                     <br>
                 </h3>
-
-            </aside>
-
-            <aside class="inovacao">
-                <a hred="#">Entre em contato para Disponibilidade</a>
-                <br>
-                <br>
                 <br>
                 <p>
                     Esse serviço está disponível para cidade de São Paulo, devido ao trânsito e curtos caminhos.
                     Com segurança, equipamentos e pessoas treinadas para entregar sem parar.
                 </p>
+                <br>
+                <a href="./Pages/pedidos.html">Entre em contato para Disponibilidade</a>
             </aside>
         </section>
         <section class="cards">
@@ -98,32 +105,49 @@
                 <h1>Motobike</h1>
                 <p>
                     Jeito fácil para quem deseja receber encomendas de pequeno porte com rapidez. Temos parceiros em
-                    varías cidades confira a disponibilidade <a href="#">Clique Aqui</a>
+                    varías cidades confira a disponibilidade 
                 </p>
+                <a href="./Pages/pedidos.html">Fazer pedido</a>
             </aside>
             <aside class="cardCaminhoes">
 
                 <h1>Caminhões leves</h1>
                 <p>
                     Jeito fácil para quem deseja receber encomendas de pequeno porte com rapidez. Temos parceiros em
-                    varías cidades confira a disponibilidade <a href="#">Clique Aqui</a>
+                    varías cidades confira a disponibilidade 
                 </p>
+                <a href="./Pages/pedidos.html">Fazer pedido</a>
             </aside>
             <aside class="cardCaminhoesP">
 
                 <h1>Caminhões Pesados</h1>
                 <p>Contando com frota nova nosso Caminhões estão disponíveis em varios Estados, fazendo conexões com filiais e parceiros, veja os locais
-                     <a href="#">Clicando Aqui</a>
                 </p>
+                <a href="./Pages/pedidos.html">Fazer pedido</a>
             </aside>
             
         </section>
 
-        <section class="secaoRastreamento">
+        <section class="cardRastreamento">
+            <img src="img/placeholder.png" alt="Gps"> 
+            <aside>
+                <h2> Rastreamento de Encomendas </h2>
+                <p> Transparência no ínicio ao fim. <br>
+                    Acompanhe seu pedido , organize seu tempo e receba no melhor horário. 
+                </p>
+                <br>
+                <br>
+                <a href="./Pages/rastreamento.html">Rastrear Pedido</a> 
+            </aside>
+        </section>
+        <section class="Empresa">A
+            <aside>
+
+                
+            </aside>
 
         </section>
-        <section class="secaoFrota">A</section>
-        <p> Main</p>
+     
     </main>
     <footer>
         <section>
@@ -139,6 +163,7 @@
         <section>
             <h3>Contato</h3>
             <ul>
+                <li>Chat </li>
                 <li>Atendimento Cliente : <br>
                     (xx)xxxx-xxxx</li>
                 <li>Financeiro:<br>
