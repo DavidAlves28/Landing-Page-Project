@@ -3,12 +3,13 @@
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+
 }
 
 /* fundo da pagina com degrade */
 body {
-
     background-image: linear-gradient(-45deg, #ffff, rgba(194, 57, 73, 255));
+    background-repeat: no-repeat;
 }
 
 /* stryle para header e flex para separar itens  */
@@ -40,168 +41,19 @@ h2 {
 }
 
 /*  Style para login  */
-.login{
+.login {
     display: flex;
     justify-content: end;
     align-items: center;
     height: 8vh;
     width: 99vw;
-    gap:1%;
+    gap: 1%;
     background-image: linear-gradient(90deg, rgba(194, 57, 73, 255), #ffff);
     font-size: x-large;
 }
-.login a{
-   margin-right: 30px;
-   height: 50%;
-   text-decoration: none;
-   padding: 5px 5px;
-   text-align: right;
-   background-image: linear-gradient(90deg, rgba(194, 57, 73, 255), #ffff);
-   border-bottom-left-radius: 20px;
-   border-bottom-right-radius: 20px;
-   color: #222;
 
-}
-/* Input senha e nome usuario */
-#nome,#senha {
-    border-radius: 5px;
-    width:90px;
-    height: 20px;
-}
-button{
-    border-radius: 5px;
-    width: 50px;
-    height: 25px;  
+.login a {
     margin-right: 30px;
-}
-button:hover {
-    background-image: linear-gradient(0deg, #9e2a2b, #b23a48, #ed3147);
-    cursor: pointer;
-}
-/* Estilização do menu  */
-.nav-principal {
-    position: sticky;
-    top: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: linear-gradient(0deg, #9e2a2b, #b23a48, #ed3147);
-    width: 98vw;
-    border: 1px solid #222;
-    float: left;
-    height: 35px;
-    font-size: larger;
-
-}
-
-/*  style para itens lista. */
-.nav-principal li {
-    position: relative;
-    float: left;
-    list-style: none;
-    background-image: linear-gradient(0deg, #9e2a2b, #b23a48, #ed3147);
-    width: 100%;
-}
-
-
-/* style para itens a dentro li do menu */
-.nav-principal li a {
-    color: rgb(213, 219, 214);
-    text-decoration: none;
-    padding: 5px 10px;
-    display: block;
-    width: 90%;
-}
-
-/* esse style faz com que o menu tenha uma animação abaixo como uma barra que aumenta quando o mouse passa por cima  line 70/87*/
-.nav-principal li a:before {
-    /* before: oque como é como item deve estar antes que passo o mouse mais com todas as propriedades ja atribuidas,  a visibility: hidden cuida que isso aconteca */
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: #000;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s;
-}
-
-.nav-principal li a:hover:before {
-    /*  Nessa parte quando o mouse passa por cima , usando o hover os parametros sao mudados visible, scaleX() */
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-
-/*  hover para itens a dentro da li do menu */
-.nav-principal li a:hover {
-
-    color: #fff;
-    text-shadow: 0px 0px 5px #fff;
-}
-
-/* direciona todos os itens ul do menu */
-.nav-principal li ul {
-    position: absolute;
-    top: 32px;
-    left: 0;
-    background-color: #fff;
-    display: none;
-
-}
-
-/* estrutura para esconder o sub-menu  */
-.nav-principal li:hover ul,
-.nav-principal li.over ul {
-    display: block;
-}
-
-/* style para sub-menu */
-.nav-principal li ul li {
-    border: 1px solid #191818;
-    display: block;
-}
-
-/* estrutura da Main  */
-.containerMain {
-    height: 1200px;
-    width: 99vw;
-    display: flex;
-    flex-direction: column;
-}
-
-/* style para primeira secao da main "Inovação" */
-.secaoInovacao {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    width: 95%;
-    height: 25%;
-    margin: 20px 0 30px 30px;
-    background-color: rgba(194, 57, 73, 255);
-    border-radius: 20px;
-    justify-content: center;
-
-}
-.secaoInovacao img{
-    height: 55%;
-    grid-column: 1;
-    margin-left: 20%;
-}
-.cardPrincipal{
-    height: 100%;
-    grid-column: 2;
-}
-.cardPrincipal h1 {
-   
-    color: aliceblue;
-}
-
-.cardPrincipal a{
     height: 50%;
     text-decoration: none;
     padding: 5px 5px;
@@ -212,25 +64,217 @@ button:hover {
     color: #222;
 
 }
+
+/* Input senha e nome usuario */
+#nome,
+#senha {
+    border-radius: 5px;
+    width: 90px;
+    height: 20px;
+}
+
+button {
+    border-radius: 5px;
+    width: 50px;
+    height: 25px;
+    margin-right: 30px;
+}
+
+button:hover {
+    background-image: linear-gradient(0deg, #9e2a2b, #b23a48, #ed3147);
+    cursor: pointer;
+}
+
+/* Será mostrado apenas no mobile */
+
+/* Estilização do menu  , Estilizaçao em aprendizagem! */
+.nav-principal {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: sticky;
+    width: 100%;
+    height: 10vh;
+     z-index: 5;  
+    background-image: linear-gradient(0deg, #9e2a2b, #b23a48, #ed3147);
+    overflow: hidden;
+    list-style: none;
+}
+.nav-principal a {
+    color: #ffff;
+}
+
+
+.nav-principal li a {
+    color: #ffff;
+    display: block;
+    padding: 20px 20px;
+    /* border-right: 1px solid #f4f4f4; */
+    text-decoration: none;
+}
+
+.nav-principal li a:hover,
+.nav-principal .menu-btn:hover {
+    background-color: #2e2d2d;
+}
+
+.nav-principal .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* menu */
+
+.nav-principal .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .4s ease-out;
+    list-style: none;
+}
+
+/* menu icon */
+
+.nav-principal .menu-icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.nav-principal .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.nav-principal .menu-icon .navicon:before,
+.nav-principal .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.nav-principal .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.nav-principal .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+/* escode o checkbox  */
+.nav-principal .menu-btn {
+    display: none;
+}
+/* tamanho do sub-menu  */
+.nav-principal .menu-btn:checked~.menu {
+    max-height: 240px;
+}
+
+
+ .nav-principal .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+} 
+
+.nav-principal .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.nav-principal .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.nav-principal .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.nav-principal .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* 48em = 768px */
+
+
+/* estrutura da Main  */
+.containerMain {
+    height: 1200px;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* style para primeira secao da main "Inovação" */
+.secaoInovacao {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+    height: 25%;
+    margin: 20px 0 30px 30px;
+    background-color: rgba(194, 57, 73, 255);
+    border-radius: 20px;
+    justify-content: center;
+    
+}
+
+.secaoInovacao img {
+    height: 55%;
+    grid-column: 1;
+    margin-left: 20%;
+}
+
+.cardPrincipal {
+    height: 100%;
+    grid-column: 2;
+}
+
+.cardPrincipal h1 {
+    
+    color: aliceblue;
+}
+
+.cardPrincipal a {
+    height: 50%;
+    text-decoration: none;
+    padding: 5px 5px;
+    text-align: right;
+    background-image: linear-gradient(90deg, rgba(194, 57, 73, 255), #ffff);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #222;
+    
+}
+
 /*  linha vertical  no card principal */
 .lineV {
-
+    
     border-left: 6px solid black;
     height: 100%;
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
     margin-left: 25%;
-
+    
 }
 
 .lineMenu {
-
+    
     border-left: 6px solid black;
     height: 100%;
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
-
-
+    
+    
 }
 
 
@@ -254,13 +298,13 @@ button:hover {
     border-radius: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-
+    
+    
 }
 
 .motobike h1,
 p {
-
+    
     text-align: justify;
     grid-column: 2;
     margin: 2px 10px;
@@ -295,7 +339,7 @@ p {
 
 .cardCaminhoes h1,
 p {
-
+    
     text-align: justify;
     grid-column: 2;
     margin: 2px 10px;
@@ -378,19 +422,231 @@ p {
     justify-content: space-around;
     align-items: flex-start;
     background-color: #ed3147;
-    height: 20vh;
+    height: 30vh;
     border: 1px solid black;
 }
-.linkedin{
+
+.linkedin {
     height: 5vh;
 }
-.github{
+
+.github {
     height: 5vh;
 }
+
 .rodaPe li {
     list-style: none;
 }
-.rodaPe a{
+
+.rodaPe a {
     text-decoration: none;
     color: #000;
+}
+
+/* Responsividade iphone 6/7/8 */
+@media screen and (max-width: 768px) {
+    
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        background-image: url(img/Log4-mini.png);
+        background-repeat: round;
+        
+    }
+    
+    .header img {
+        display: none;
+    }
+    
+    .header h1,
+    h2 {
+        display: none;
+    }
+    
+    .nav-principal {
+        width: 100vw;
+        display: block;
+        height: 50%;
+        position: relative;
+    }
+    
+    .lineMenu {
+        display: none;
+    }
+    
+    .containerMain {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 99%;
+    }
+    
+    
+    .login {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        height: 14vh;
+        width: 95vw;
+        margin: 3%;
+        border-radius: 5%;
+        gap: 3%;
+    }
+    
+    .login a {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        font-size: medium;
+        border-radius: 10px;
+        width: 90%;
+    }
+    
+    #nome {
+        grid-column: 1/2;
+        grid-row: 1;
+        font-size: medium;
+        margin-left: 5%;
+        width: 80%;
+        height: 2rem;
+        
+    }
+    
+    #senha {
+        grid-column: 2;
+        grid-row: 1;
+        width: 80%;
+        height: 2rem;
+    }
+
+    .login button {
+        grid-column: 3;
+        grid-row: 1;
+        width: 90%;
+        height: 2rem;
+    }
+    
+    .secaoInovacao {
+        height: 100%;
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        margin: 3%;
+        justify-content: space-around;
+    }
+    
+    .secaoInovacao img {
+        height: 23vh;
+        width: 35vw;
+        
+    }
+    
+    .cardPrincipal {
+        height: 50vh;
+        width: 95vw;
+        margin: 2%;
+    }
+    
+    .cardPrincipal a {
+        
+        height: 25%;
+    }
+    
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 1000px;
+        width: 95vw;
+        margin: 3%;
+    }
+    
+    .motobike {
+        height: 45vh;
+        width: 95vw;
+    }
+    
+    .motobike a {
+        height: 50%;
+    }
+    
+    .cardCaminhoes {
+        height: 45vh;
+        width: 95vw;
+        
+    }
+    
+    .cardCaminhoes a {
+        height: 50%;
+    }
+    
+    .cardCaminhoesP {
+        height: 45vh;
+        width: 95vw;
+        
+    }
+    
+    .cardCaminhoesP a {
+        height: 60%;
+    }
+    
+    .cardRastreamento {
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+        
+    }
+    
+    .cardRastreamento img {
+        height: 12vh;
+        
+    }
+    
+    .cardRastreamento aside a {
+        height: 27px;
+    }
+    
+    .rodaPe {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 20vh;
+        font-size: small;
+    }
+    
+    .redeSocial {
+        display: flex;
+        flex-wrap: wrap
+    }
+    
+    .linkedin {
+        height: 4vh;
+        
+    }
+    
+    .github {
+        height: 4vh;
+    }
+}
+
+/* Style para menu para Mobile */
+@media (min-width: 768px) {
+    .nav-principal li {
+        float: left;
+    }
+
+    .nav-principal li a {
+        padding: 20px 30px;
+    }
+
+    .nav-principal .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .nav-principal .menu-icon {
+        display: none;
+    }
 }

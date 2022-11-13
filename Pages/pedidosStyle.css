@@ -39,6 +39,7 @@ h2 {
 .header img {
     height: 15vh;
 }
+
 /* Style HOME para voltar a pagina principal */
 a {
     display: block;
@@ -49,20 +50,24 @@ a {
     color: #222;
     font-size: x-large;
 }
-a:hover{
+
+a:hover {
     background-image: linear-gradient(45deg, rgba(194, 57, 73, 255), #ffff);
-  
+
 }
+
 .containerMain {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.cardPrincipal img{
- height: 24vh;
- width: 15vw;
+
+.cardPrincipal img {
+    height: 24vh;
+    width: 15vw;
 }
-.cardPrincipal{
+
+.cardPrincipal {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
     height: 24vh;
@@ -70,74 +75,126 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
+
 #seletor {
     height: 6vh;
     grid-column: 3;
     border-radius: 10px;
 
 }
+
 button {
     width: 10vw;
     height: 5vh;
     border-radius: 10px;
 }
+
 button:hover {
     background-image: linear-gradient(90deg, rgba(194, 57, 73, 255), #ffff);
     cursor: pointer;
 }
 
-.cardMoto img{
+.cardMoto img {
     height: 24vh;
     width: 15vw;
-   }
-   .cardMoto{
-       display: grid;
-       grid-template-columns: 1fr 2fr 2fr;
-       height: 24vh;
-       width: 95vw;
-       justify-content: center;
-       align-items: center;
-   }
-   #seletor {
-       height: 6vh;
-       grid-column: 3;
-       border-radius: 10px;
-   
-   }
-   .cardCaminhoes img{
+}
+
+.cardMoto {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    height: 24vh;
+    width: 95vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#seletor {
+    height: 6vh;
+    grid-column: 3;
+    border-radius: 10px;
+
+}
+
+.cardCaminhoes img {
     height: 24vh;
     width: 15vw;
-   }
-   .cardCaminhoes{
-       display: grid;
-       grid-template-columns: 1fr 2fr 2fr;
-       height: 24vh;
-       width: 95vw;
-       justify-content: center;
-       align-items: center;
-   }
-   #seletor {
-       height: 6vh;
-       grid-column: 3;
-       border-radius: 10px;
-   
-   }
-   .cardCaminhoesP img{
+}
+
+.cardCaminhoes {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    height: 24vh;
+    width: 95vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#seletor {
+    height: 6vh;
+    grid-column: 3;
+    border-radius: 10px;
+
+}
+
+.cardCaminhoesP img {
     height: 30vh;
     width: 15vw;
-   }
-   .cardCaminhoesP{
-       display: grid;
-       grid-template-columns: 1fr 2fr 2fr;
-       height: 24vh;
-       width: 95vw;
-       justify-content: center;
-       align-items: center;
-   }
-   #seletor {
-       height: 6vh;
-       grid-column: 3;
-       border-radius: 10px;
-   
-   }
-   
+}
+
+.cardCaminhoesP {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    height: 24vh;
+    width: 95vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#seletor {
+    height: 6vh;
+    grid-column: 3;
+    border-radius: 10px;
+
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+
+    .containerMain {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        border: 1px solid;
+
+        width: 96vw;
+
+    }
+
+    .cardPrincipal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+    .cardMoto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+    .cardCaminhoes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+    .cardCaminhoesP {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+}

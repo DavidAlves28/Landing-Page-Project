@@ -25,49 +25,27 @@
     </header>
     <!--  Estrutura de Menu e sub-menu -->
     <nav class="nav-principal">
-        <li><a href="./index.html"> Home</a></li>
+        <a href="#" class="logo">MENU</a>
+        <input type="checkbox" id="menu-btn" class="menu-btn">
+        <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+        <ul class="menu">
 
-        <div class="lineMenu"></div>
-        <li> <a href="./Pages/pedidos.html" target="_blank" rel="noopener noreferrer">Serviços </a>
-            <!-- //sub-menu -->
-            <ul class="nav-servico">
-                <li><a href="./Pages/pedidos.html" target="_blank" rel="noopener noreferrer">Motoboys e ciclistas</a>
-                </li>
-                <li><a href="./Pages/pedidos.html" target="_blank" rel="noopener noreferrer">Caminhões Pequenos</a></li>
-                <li><a href="./Pages/pedidos.html" target="_blank" rel="noopener noreferrer">Caminhões Pesados</a></li>
-            </ul>
-        </li>
-        <!-- Div para criar uma divisao entre os itens do menu -->
-        <div class="lineMenu"></div>
+            <li><a href="./index.html"> Home</a></li>
 
-        <li><a href="./Pages/rastreamento.html">Rastreamento</a>
-            <!-- //sub-menu -->
-            <ul class="nav-cultura">
-                <li><a href="./Pages/rastreamento.html">Encomendas </a> </li>
-                <li><a href="./Pages/rastreamento.html">Caminhões</a></li>
-            </ul>
-        </li>
-        <div class="lineMenu"></div>
-        <li> <a href="./Pages/contato.html" target="_blank" rel="noopener noreferrer">Contato</a>
-            <!-- //sub-menu -->
-            <ul class="nav-contato">
-                <li><a href="./Pages/contato.html">Chat</a></li>
-                <li><a href="./Pages/contato.html">Atendimento Cliente</a> </li>
-                <li><a href="./Pages/contato.html">Financeiro</a></li>
-            </ul>
-        </li>
-        <div class="lineMenu"></div>
-        <li><a href="#">Sobre</a></li>
-        <div class="lineMenu"></div>
-        <li><a href="#">Oportunidades</a>
-            <!-- sub-menu -->
-            <ul class="nav-trabalhe">
-                <li><a href="#">Vagas</a> </li>
-                <li><a href="#">Nosso Time</a></li>
-            </ul>
-        </li>
-        </li>
+            <li> <a href="./Pages/pedidos.html" target="_blank" rel="noopener noreferrer">Serviços </a></li>
+            <!-- Div para criar uma divisao entre os itens do menu -->
+
+            <li><a target="_blank" href="./Pages/rastreamento.html">Rastreamento</a>
+            </li>
+            <li> <a href="./Pages/contato.html" target="_blank" rel="noopener noreferrer">Contato</a>
+            </li>
+
+            <li><a href="#">Sobre</a></li>
+
+
+        </ul>
     </nav>
+
     <main class="containerMain">
         <section class="login">
             <label for="nome">
@@ -78,7 +56,8 @@
                 <input type="password" placeholder="Senha" id="senha">
             </label>
             <button href="#"> Entrar</button>
-            <a href="./Pages/cadastro.html" target="_blank" rel="noopener noreferrer">FAÇA SEU CADASTRO</a>
+            <a class="cadastroMenu" href="./Pages/cadastro.html" target="_blank" rel="noopener noreferrer">FAÇA SEU
+                CADASTRO</a>
         </section>
         <section class="secaoInovacao">
 
@@ -104,7 +83,7 @@
         <section class="cards">
             <aside class="motobike">
 
-                <h1>Motobike</h1>
+                <h1>Motoboys</h1>
                 <p>
                     Jeito fácil para quem deseja receber encomendas de pequeno porte com rapidez. Temos parceiros em
                     varías cidades confira a disponibilidade
@@ -150,36 +129,42 @@
 
         <ul>
             <h3><a href="./Pages/contato.html" target="_blank" rel="noopener noreferrer">Contato</a></h3>
-           
+
             <li> <a href="./Pages/contato.html" target="_blank" rel="noopener noreferrer">Chat</a> </li>
-            <li><a href="./Pages/contato.html" target="_blank" rel="noopener noreferrer">Reclamações:</a> 01 - 1234-5678</li>
+            <li><a href="./Pages/contato.html" target="_blank" rel="noopener noreferrer">Reclamações:</a> 01 - 1234-5678
+            </li>
             <li><a href="./Pages/contato.html" target="_blank" rel="noopener noreferrer">Financeiro:</a><br>
                 01 - 1234-5678</li>
         </ul>
-        <ul>
+        <ul class="redeSocial">
             <h3>Sobre</h3>
             <li>
                 <a href="https://www.linkedin.com/in/david-alves-costa-7a2b90145/" target="_blank"
                     rel="noopener noreferrer"><img class="linkedin" src="img/linkedin.png" alt="linkedin">Linkedin</a>
             </li>
             <li>
-                <a href="https://github.com/DavidAlves28" target="_blank" rel="noopener noreferrer"><img class="github" src="img/github.png" alt="github">Github</a>
+                <a href="https://github.com/DavidAlves28" target="_blank" rel="noopener noreferrer"><img class="github"
+                        src="img/github.png" alt="github">Github</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="github"
+                        src="img/facebook.png" alt="facebook">Facebook</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="github"
+                        src="img/instagram.png" alt="instagram">Instagram</a>
             </li>
         </ul>
-        
-            <ul>
-                <h3>Rastreamento</h3>
-                <li><a href="./Pages/rastreamento.html" target="_blank" rel="noopener noreferrer">Rastrear</a></li>
-            </ul>
 
 
-            <ul>
-                <h3>Trabalhe conosco</h3>
-                <li>Vagas </li>
-                <li>Nosso Time</li>
-            </ul>
+     
+        <ul>
+            <h3>Rastreamento</h3>
+            <li><a href="./Pages/rastreamento.html" target="_blank" rel="noopener noreferrer">Rastrear</a></li>
+        </ul>
+
 
     </footer>
 </body>
 
-</html>""
+</html>
