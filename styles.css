@@ -203,7 +203,6 @@ button:hover {
     top: 0;
 }
 
-/* 48em = 768px */
 
 
 /* estrutura da Main  */
@@ -422,7 +421,7 @@ p {
     justify-content: space-around;
     align-items: flex-start;
     background-color: #ed3147;
-    height: 30vh;
+    height: 24vh;
     border: 1px solid black;
 }
 

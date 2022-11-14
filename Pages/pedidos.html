@@ -11,20 +11,38 @@
 
 <body>
     <header class="header">
-        <img src="../img/Log4-mini.png" alt="Log4-mini">
         <h1>Log4</h1>
         <h2> ENTREGAR SEM PARAR ▫️▫️▫️</h2>
         <img src="../img/bicycle.png" alt="bicycle">
-
+     
         <img src="../img/motorbike.png" alt="motorbike">
-
+        
         <img src="../img/caminhao-de-entrega.png" alt="caminhao-de-entrega">
 
         <img src="../img/caminhao-grande.png" alt="caminhao-de-entrega">
-
+       
     </header>
+    <nav class="nav-principal">
+        <a href="#" class="logo">MENU</a>
+        <input type="checkbox" id="menu-btn" class="menu-btn">
+        <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+        <ul class="menu">
 
-    <a href="../index.html" target="_blank" rel="noopener noreferrer"> Home</a>
+            <li><a href="../index.html"> Home</a></li>
+
+            <li> <a href="./pedidos.html" target="_blank" rel="noopener noreferrer">Serviços </a></li>
+            <!-- Div para criar uma divisao entre os itens do menu -->
+
+            <li><a target="_blank" href="./rastreamento.html">Rastreamento</a>
+            </li>
+            <li> <a href="./contato.html" target="_blank" rel="noopener noreferrer">Contato</a>
+            </li>
+
+            <li><a href="#">Sobre</a></li>
+
+
+        </ul>
+    </nav>
 
     <main class="containerMain">
 
@@ -34,9 +52,9 @@
 
             <section>
                 <label for="A">
-                    Origim :
+                 
                     <select name="origem" id="seletor">
-                        <option> Local</option>
+                        <option> Origem</option>
                         <option> Centro </option>
                         <option> Bairro A </option>
                         <option> Bairro B </option>
@@ -48,9 +66,9 @@
                     </select>
                 </label>
                 <label for="A">
-                    Destino:
+                    
                     <select name="destino" id="seletor">
-                        <option> Local</option>
+                        <option> Destino</option>
                         <option> Centro </option>
                         <option> Bairro A </option>
                         <option> Bairro B </option>
@@ -61,7 +79,7 @@
 
                     </select>
                 </label>
-                <button> Encaminhar Pedido</button>
+                <button> Fazer Pedido</button>
             </section>
         </section>
         <section class="cardMoto">
@@ -70,9 +88,9 @@
 
             <section>
                 <label for="A">
-                    Origim :
+                  
                     <select name="origem" id="seletor">
-                        <option> Local</option>
+                        <option> Origem</option>
                         <option> Cidade A </option>
                         <option> Cidade B </option>
                         <option> Cidade C </option>
@@ -89,9 +107,8 @@
                     </select>
                 </label>
                 <label for="A">
-                    Destino:
                     <select name="destino" id="seletor">
-                        <option> Local</option>
+                        <option>  Destino</option>
                         <option> Cidade A </option>
                         <option> Cidade B </option>
                         <option> Cidade C </option>
@@ -107,7 +124,7 @@
 
                     </select>
                 </label>
-                <button> Encaminhar Pedido</button>
+                <button> Fazer Pedido</button>
             </section>
         </section>
         <section class="cardCaminhoes">
@@ -116,9 +133,9 @@
 
             <section>
                 <label for="A">
-                    Origim :
+                   
                     <select name="origem" id="seletor">
-                        <option> Local</option>
+                        <option> Origem </option>
                         <option> Cidade A </option>
                         <option> Cidade B </option>
                         <option> Cidade C </option>
@@ -135,9 +152,9 @@
                     </select>
                 </label>
                 <label for="A">
-                    Destino:
+                  
                     <select name="destino" id="seletor">
-                        <option> Local</option>
+                        <option>  Destino</option>
                         <option> Cidade A </option>
                         <option> Cidade B </option>
                         <option> Cidade C </option>
@@ -153,7 +170,7 @@
 
                     </select>
                 </label>
-                <button> Encaminhar Pedido</button>
+                <button> Fazer Pedido</button>
             </section>
         </section> 
         <section class="cardCaminhoesP">
@@ -162,9 +179,9 @@
 
             <section>
                 <label for="A">
-                    Origim :
+           
                     <select name="origem" id="seletor">
-                        <option> Local</option>
+                        <option> Origem </option>
                         <option> Cidade A </option>
                         <option> Cidade B </option>
                         <option> Cidade C </option>
@@ -180,9 +197,9 @@
                     </select>
                 </label>
                 <label for="A">
-                    Destino:
+
                     <select name="destino" id="seletor">
-                        <option> Local</option>
+                        <option> Destino</option>
                         <option> Cidade A </option>
                         <option> Cidade B </option>
                         <option> Cidade C </option>
@@ -197,9 +214,46 @@
 
                     </select>
                 </label>
-                <button> Encaminhar Pedido</button>
+                <button> Fazer Pedido</button>
             </section>
         </section>
+        <footer class="rodaPe">
+
+            <ul>
+                <h3><a href="./Pages/contato.html" target="_blank" rel="noopener noreferrer">Contato</a></h3>
+    
+                <li> <a href="./Pages/contato.html" target="_blank" rel="noopener noreferrer">Chat</a> </li>
+                <li><a href="./Pages/contato.html" target="_blank" rel="noopener noreferrer">Reclamações:</a> 01 - 1234-5678
+                </li>
+                <li><a href="./Pages/contato.html" target="_blank" rel="noopener noreferrer">Financeiro:</a><br>
+                    01 - 1234-5678</li>
+            </ul>
+            <ul class="redeSocial">
+                <h3></h3>
+                <li>
+                    <a href="https://www.linkedin.com/in/david-alves-costa-7a2b90145/" target="_blank"
+                        rel="noopener noreferrer"><img class="linkedin" src="../img/linkedin.png" alt="linkedin">Linkedin</a>
+                </li>
+              
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="github"
+                            src="../img/facebook.png" alt="facebook">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="github"
+                            src="../img/instagram.png" alt="instagram">Instagram</a>
+                </li>
+            </ul>
+    
+    
+         
+            <ul>
+                <h3>Rastreamento</h3>
+                <li><a href="./Pages/rastreamento.html" target="_blank" rel="noopener noreferrer">Rastrear</a></li>
+            </ul>
+    
+    
+        </footer>
 
 
     </main>

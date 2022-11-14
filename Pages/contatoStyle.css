@@ -7,7 +7,6 @@
 
 /* fundo da pagina com degrade */
 body {
-    height: 1000px;
     background-image: linear-gradient(-90deg, rgb(193, 181, 181), rgba(194, 57, 73, 255));
     background-repeat: no-repeat;
 }
@@ -49,16 +48,131 @@ h2 {
     color: #222;
     font-size: x-large;
 }
-a:hover{
-    background-color: rgba(194, 57, 73, 255);
-  
+
+
+/* Estilização do menu  , Estilizaçao em aprendizagem! */
+.nav-principal {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: sticky;
+    width: 100%;
+    height: 10vh;
+     z-index: 5;  
+    background-image: linear-gradient(0deg, #9e2a2b, #b23a48, #ed3147);
+    overflow: hidden;
+    list-style: none;
 }
+.nav-principal a {
+    color: #ffff;
+}
+
+
+.nav-principal li a {
+    color: #ffff;
+    display: block;
+    padding: 20px 20px;
+    /* border-right: 1px solid #f4f4f4; */
+    text-decoration: none;
+}
+
+.nav-principal li a:hover,
+.nav-principal .menu-btn:hover {
+    background-color: #2e2d2d;
+}
+
+.nav-principal .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* menu */
+
+.nav-principal .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .4s ease-out;
+    list-style: none;
+}
+
+/* menu icon */
+
+.nav-principal .menu-icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.nav-principal .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.nav-principal .menu-icon .navicon:before,
+.nav-principal .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.nav-principal .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.nav-principal .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+/* escode o checkbox  */
+.nav-principal .menu-btn {
+    display: none;
+}
+/* tamanho do sub-menu  */
+.nav-principal .menu-btn:checked~.menu {
+    max-height: 240px;
+}
+
+
+ .nav-principal .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+} 
+
+.nav-principal .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.nav-principal .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.nav-principal .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.nav-principal .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
 .containerMain{
     margin-top:20px ;
     display: grid;
     grid-template-columns: 1fr 2fr ;
     justify-content: flex-start;
     align-items: center;
+    height:  90vh
 }
 
 .chat{
@@ -83,4 +197,54 @@ a:hover{
     flex-direction: column;
     justify-content: flex-start;
     align-items: baseline;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .header{ 
+        display: none;
+    }
+    .containerMain{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 99vw;
+        gap: 50px;
+    }
+    .chat{
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .contato{
+        width: 90vw;
+        margin: 0 auto;
+        margin-bottom:  30px;
+    }
+    .nav-principal {
+        width: 100vw;
+        display: block;
+        height: 50%;
+        position: relative;
+    }
+}
+
+/* Style para menu para Mobile */
+@media (min-width: 768px) {
+    .nav-principal li {
+        float: left;
+    }
+
+    .nav-principal li a {
+        padding: 20px 30px;
+    }
+
+    .nav-principal .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .nav-principal .menu-icon {
+        display: none;
+    }
 }
