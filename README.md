@@ -26,7 +26,11 @@ O CSS deste projeto pude melhorar alguns pontos em flex, e GRID, colocar em prat
 No entanto o site é estático, apenas um modelo de como, ou pedoria ser feito sem utilização de JavaScript.
 
 Video Tela Principal : 
- https://user-images.githubusercontent.com/107942209/201973953-f83bb374-3872-495e-87e5-99f551863bb0.mp4
+
+
+https://user-images.githubusercontent.com/107942209/201975122-09e2516c-dd69-4ec7-9211-ea5cb19df71a.mp4
+
+
 
 Tela responsiva:
 
