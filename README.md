@@ -27,3 +27,7 @@ No entanto o site é estático, apenas um modelo de como, ou pedoria ser feito s
 
 Video Tela Principal : 
  
+
+
+https://user-images.githubusercontent.com/107942209/201973688-f97f613b-6c17-4084-9a8e-0207091eebd7.mp4
+
