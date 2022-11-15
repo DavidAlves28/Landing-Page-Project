@@ -218,6 +218,7 @@ button:hover {
 .secaoInovacao {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
     width: 95%;
     height: 25%;
     margin: 20px 0 30px 30px;
@@ -234,7 +235,7 @@ button:hover {
 }
 
 .cardPrincipal {
-    height: 100%;
+    height: 80%;
     grid-column: 2;
 }
 
@@ -243,15 +244,17 @@ button:hover {
     color: aliceblue;
 }
 
-.cardPrincipal a {
+.secaoInovacao a {
     height: 50%;
     text-decoration: none;
     padding: 5px 5px;
-    text-align: right;
+    text-align: end;
     background-image: linear-gradient(90deg, rgba(194, 57, 73, 255), #ffff);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     color: #222;
+    grid-column: 1;
+  
     
 }
 
@@ -533,30 +536,32 @@ p {
         display: flex;
         flex-direction: column;
         margin: 3%;
-        justify-content: space-around;
+        justify-content: space-between;
+
     }
     
     .secaoInovacao img {
         height: 23vh;
         width: 35vw;
-        
+        margin: 3%;
     }
     
     .cardPrincipal {
-        height: 50vh;
+        height: 46vh;
         width: 95vw;
         margin: 2%;
     }
     
     .cardPrincipal a {
-        
-        height: 25%;
+        width: 91vw;
+        height: 35px;
+        margin: 0 auto;
     }
     
     .cards {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         height: 1000px;
         width: 95vw;
         margin: 3%;
@@ -568,7 +573,9 @@ p {
     }
     
     .motobike a {
-        height: 50%;
+        width: 90vw;
+        height: 8vh;
+        margin: 0 auto;
     }
     
     .cardCaminhoes {
@@ -578,7 +585,9 @@ p {
     }
     
     .cardCaminhoes a {
-        height: 50%;
+        width: 90vw;
+        height: 8vh;
+        margin: 0 auto;
     }
     
     .cardCaminhoesP {
@@ -588,7 +597,9 @@ p {
     }
     
     .cardCaminhoesP a {
-        height: 60%;
+        width: 90vw;
+        height: 8vh;
+        margin: 0 auto;
     }
     
     .cardRastreamento {

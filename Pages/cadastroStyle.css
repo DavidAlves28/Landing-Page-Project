@@ -207,6 +207,10 @@ button:hover {
         width:60%;
         
     }
+
+    input,select {
+        height: 4vh;
+    }
     button {
         width: 80vw;
         height: 8vh;

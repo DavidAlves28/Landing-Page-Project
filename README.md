@@ -1,7 +1,8 @@
 # Landing-Page-Project
 ### TEMA : Transportadora .
 
-Projeto com intuito de aperfeiçoar as habilidades, reforçar os conteúdos de : 
+
+Projeto com intuito de aperfeiçoar as habilidades, reforçar os conteúdos de:
  - HTML TAGs Semânticas!
  - CSS  aperfeiçoar Flex, GRID.
 
@@ -22,4 +23,7 @@ O CSS deste projeto pude melhorar alguns pontos em flex, e GRID, colocar em prat
  
  que resultaram em Menu bem legal!
 
+No entanto o site é estático, apenas um modelo de como, ou pedoria ser feito sem utilização de JavaScript.
+
+Video Tela Principal : 
  
