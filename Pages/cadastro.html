@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastroStyle.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="../img/Log4-mini.png" alt="Log4-mini">
+        <h1>Log4</h1>
+        <h2> ENTREGAR SEM PARAR ▫️▫️▫️</h2>
+        <img src="../img/bicycle.png" alt="bicycle">
+
+        <img src="../img/motorbike.png" alt="motorbike">
+
+        <img src="../img/caminhao-de-entrega.png" alt="caminhao-de-entrega">
+
+        <img src="../img/caminhao-grande.png" alt="caminhao-de-entrega">
+
+    </header>
+    <!--  Estrutura de Menu e sub-menu -->
+    <nav class="nav-principal">
+        <a href="#" class="logo">MENU</a>
+        <input type="checkbox" id="menu-btn" class="menu-btn">
+        <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+        <ul class="menu">
+
+            <li><a href="../index.html"> Home</a></li>
+
+            <li> <a href="./pedidos.html" target="_blank" rel="noopener noreferrer">Serviços </a></li>
+            <!-- Div para criar uma divisao entre os itens do menu -->
+
+            <li><a target="_blank" href="./rastreamento.html">Rastreamento</a>
+            </li>
+            <li> <a href="./contato.html" target="_blank" rel="noopener noreferrer">Contato</a>
+            </li>
+
+            <li><a href="#">Sobre</a></li>
+
+
+        </ul>
+    </nav>
+
+    <main class="containerMain">
+        <section class="cadastro">
+            <h1>
+                Preencha o Cadastro :
+            </h1>
+            <label for="nome">
+                Nome :
+                <input type="text" id="nome">
+            </label>
+
+            <label for="sobrenome">
+                Sobrenome :
+                <input type="text" id="sobrenome">
+            </label>
+
+            <label for="tel">
+                Telefone
+                <input type="tel" placeholder="(xx)xxxxx-xxxx">
+            </label>
+
+            <label for="pessoa">
+                Selecione :
+                <select name="pessoa" id="pessoa">
+                    <option value="null">Selecione</option>
+                    <option value="fisica">Pessoa Física</option>
+                    <option value="Juridica">Pessoa Jurídica</option>
+                </select>
+            </label>
+            <br>
+            <label for="cpf/cnpj">
+                CPF OU CNPJ
+                <input type="text" id="cpf/cnpj">
+            </label>
+
+            <label for="empresa">
+                Nome Empresa (Para CNPJ)
+                <input type="text" id="empresa">
+            </label>
+
+            <label for="email">Email :
+                <input type="email" id="email">
+            </label>
+            <label for="emailConfirma">Confirmar Email :
+                <input type="email" id="emailConfirma">
+            </label>
+
+        </section>
+        <button> Cadastrar</button>
+    </main>
+
+</body>
+
+</html>
